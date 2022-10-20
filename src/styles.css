@@ -1,0 +1,668 @@
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexCenterColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.codeFont {
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  height: 100vh;
+  background-color: #e0fbfc;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+.hero p {
+  font-size: 3rem;
+  max-width: 700px;
+  animation: slideUp 1.5s;
+}
+@media screen and (max-width: 1200px) {
+  .hero p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
+.intro span {
+  color: #e4e8ed;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  font-size: 0.8em;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(600px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.intro h1 {
+  font-size: 3rem;
+  color: #e4e8ed;
+  animation: fadeIn 2s;
+}
+@media screen and (max-width: 1200px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+}
+.big-header {
+  color: #e4e8ed;
+  font-size: 7rem;
+}
+@media screen and (max-width: 1200px) {
+  .big-header {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .big-header {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .big-header {
+    font-size: 3rem;
+  }
+}
+h2.big-header {
+  color: #e4e8ed;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+.font-color {
+  color: #e4e8ed;
+}
+.about-me {
+  color: black;
+  background-color: #284e74;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6rem 2rem;
+}
+.profile-picture img {
+  border: 10px solid #284e74;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+  width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .profile-picture img {
+    width: 250px;
+  }
+}
+#about-me-code {
+  background-color: #f3f5f8;
+  border-radius: 15px 15px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#about-me-header {
+  background-color: #8e9aaf;
+  height: 25px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+.circle {
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background-color: #2a9d8f;
+  margin-left: 10px;
+}
+.circle:nth-last-of-type(2) {
+  background-color: #e9c46a;
+}
+.circle:nth-last-of-type(3) {
+  background-color: #e76f51;
+}
+.about-me-entry {
+  background-color: black;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  max-width: 800px;
+  flex: 1 1 0;
+}
+@media screen and (max-width: 768px) {
+  .about-me-entry {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-me-entry {
+    font-size: 0.8rem;
+  }
+}
+.about-me-query {
+  color: #e4e8ed;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+.about-me-response,
+.about-me-array {
+  color: #e4e8ed;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+.array-item {
+  color: #e4e8ed;
+  text-indent: 3rem;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  list-style-type: none;
+}
+.array-item span,
+.about-me-response span {
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  color: #e4e8ed;
+}
+.bio {
+  color: #e4e8ed;
+  display: block;
+  margin-top: 20px;
+}
+#console-log {
+  color: #e4e8ed;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+.home-projects h4 {
+  align-self: center;
+  padding-top: 4rem;
+}
+.about-me h4 {
+  font-size: 4rem;
+  color: #e4e8ed;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 800px), screen and (max-height: 400px) {
+  .about-me h4 {
+    font-size: 3rem;
+  }
+}
+.about-me h4:after {
+  content: " ";
+  border: 4px solid #3d5a80;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100px;
+}
+.home-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6rem 2rem;
+}
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+}
+.project:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .project:nth-of-type(even) {
+    flex-direction: column;
+  }
+}
+.project > * {
+  margin: 1em;
+}
+.project-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+}
+.project-content {
+  padding: 2rem;
+  line-height: 2rem;
+  background-color: rgba(224, 251, 252, 0.4);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media screen and (max-width: 480px) {
+  .project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.project-content h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.project button {
+  background: none;
+  color: inherit;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 8px;
+  background-color: #98c1d9;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  outline: inherit;
+}
+.project button:hover {
+  transition: 200ms;
+  transform: translateY(-2px);
+  opacity: 80%;
+}
+.project a {
+  text-decoration: none;
+}
+.project button .button-icon {
+  height: 1.5rem;
+  margin-left: 0.25rem;
+  opacity: 60%;
+}
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .project-tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.tool {
+  border: 2px solid #284e74;
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+.project-image img {
+  width: 100%;
+  max-width: 800px;
+  flex: 1 1 0;
+}
+@media screen and (max-width: 768px) {
+  .project-image img {
+    margin: 2rem 0;
+  }
+}
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .project-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.animate-image-right {
+  animation-duration: 1.5s;
+  animation-name: animate-image-right;
+}
+.animate-image-left {
+  animation-duration: 1.5s;
+  animation-name: animate-image-left;
+}
+@keyframes animate-image-left {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animate-image-right {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.home-projects h4 {
+  font-size: 4rem;
+  color: #284e74;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 800px), screen and (max-height: 400px) {
+  .home-projects h4 {
+    font-size: 3rem;
+  }
+}
+.home-projects h4:after {
+  content: " ";
+  border: 4px solid #3d5a80;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100px;
+}
+.footer {
+  background-color: #98c1d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer p {
+  margin: 1rem;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.social-icon {
+  padding: 8px;
+  width: 75px;
+  height: 75px;
+  opacity: 60%;
+}
+.social-icon1 {
+  /* padding: 8px; */
+  /* position: absolute; */
+  right: 50px;
+  width: 45px;
+  height: 45px;
+  opacity: 60%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  justify-content: space-around;
+  background-color: #98c1d9;
+  min-height: 1vh;
+}
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links li {
+  list-style: none;
+  margin: 1em;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  transition: 200ms;
+}
+/* .nav-links a:hover {
+  color: #98c1d9;
+} */
+.nav-icon {
+  width: 15px;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #023047;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 94vh;
+    top: 6vh;
+    background: #ee6c4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+    margin: 2rem;
+  }
+  .burger {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjNPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4ejMPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4TbMPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4VrMPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4bbLPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4Y_LPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4ejLPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4cHLPrQ.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvao4CP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaooCP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEooCP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpYCP.ttf)
+    format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  color: #023047;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
