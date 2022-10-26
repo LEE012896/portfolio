@@ -75,7 +75,7 @@ const AboutMe = () => {
             <li className="array-item">0: {<span>"JavaScript"</span>}</li>
             <li className="array-item">1: {<span>"React.js"</span>}</li>
             <li className="array-item">2: {<span>"Redux"</span>}</li>
-            <li className="array-item">3: {<span>"SASS"</span>}</li>
+            <li className="array-item">3: {<span>"HTML/CSS"</span>}</li>
           </ul>
           <p className="about-me-array">backEnd: Array(4)</p>
           <ul>
