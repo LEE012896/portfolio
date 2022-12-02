@@ -8,7 +8,7 @@ const projects = [
       "Developed a desktop application that provides data visualizations to help users develop a fact-based world view, inspired by Hans Rosling and gapminder.org.",
     projectLink:
       "https://github.com/2206-capstone-npm-CEED/Dashboard_data_visualization",
-    liveLink: "https://npm-run-ceed-capstone.herokuapp.com/",
+    liveLink: "https://npmceed-data-visualization.onrender.com/",
     tools: ["JavaScript", "React", "Redux", "D3"],
   },
 
